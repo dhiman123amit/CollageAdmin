@@ -9,6 +9,7 @@ import { AuthModule } from './modules/authModule/auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
+    
    
   ],
   imports: [

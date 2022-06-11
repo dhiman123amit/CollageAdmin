@@ -4,6 +4,7 @@ import { AuthComponent } from './auth.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
+import { SighUpComponent } from '../sigh-up/sigh-up.component';
 
 const routes:Routes=[
   {path:'',redirectTo:'auth/login',pathMatch:'full'},
@@ -12,6 +13,7 @@ const routes:Routes=[
   { path: 'login', component: LoginComponent },
     {path:'forgotPassword',component:ForgotPasswordComponent},
     // {path:'resetPassword',component:ResetPasswordComponent},
+    {path:"SighUp",component:SighUpComponent}
   ]},
   
 ]
@@ -20,7 +22,8 @@ const routes:Routes=[
   declarations: [
     AuthComponent,
     ForgotPasswordComponent,
-    LoginComponent
+    LoginComponent,
+    SighUpComponent
   ],
   imports: [
     CommonModule,
