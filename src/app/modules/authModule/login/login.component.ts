@@ -22,6 +22,6 @@ export class LoginComponent implements OnInit {
   //       console.log('dhshdjs',this.router.url)
   //   }
   okk() {
-    console.log('router---',this.router.navigate(['/login/SighUp']))
+    console.log('router---',this.router.navigate(['/faculty/list']))
   }
 }
