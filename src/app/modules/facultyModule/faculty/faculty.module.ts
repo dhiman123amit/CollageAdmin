@@ -11,12 +11,12 @@ import { FacultyListComponent } from '../faculty-list/faculty-list.component';
 
 
 const routes: Routes = [
-  { path: 'faculty', redirectTo: 'faculty', pathMatch: 'full' },
+  { path: '', redirectTo: 'faculty', pathMatch: 'full' },
   {
     path: '', component: FacultyComponent, children: [
       { path: 'addFaculty', component: AddfacultyComponent },
       { path: 'editFaculty', component: EditfacultyComponent },
-      {path:'list',component:FacultyListComponent},
+      { path: 'list', component: FacultyListComponent },
 
     ]
   }
@@ -30,14 +30,14 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-     RouterModule.forChild(routes),
+    RouterModule.forChild(routes),
 
   ],
   exports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class FacultyModule { 
-  constructor(){
+export class FacultyModule {
+  constructor() {
     console.log('faculty--')
   }
 }

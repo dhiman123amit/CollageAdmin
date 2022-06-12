@@ -8,6 +8,7 @@ export class FacultyListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('hjdgfhdshfdhsfj')
   }
   ngAfterViewInit() {
   }

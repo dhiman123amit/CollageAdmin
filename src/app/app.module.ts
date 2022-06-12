@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthModule } from './modules/authModule/auth/auth.module';
+// import { AuthModule } from './modules/authModule/auth/auth.module';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -18,9 +19,9 @@ import { AuthModule } from './modules/authModule/auth/auth.module';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    AuthModule,
+    // AuthModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

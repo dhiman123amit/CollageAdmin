@@ -153,3 +153,22 @@ body {
     border-style: inherit;
     color: rgb(52 58 64 / 80%);
 }
+
+.loginNav{
+    background-color: #3498db;
+    border-style: ridge;
+}
+.lg{
+    border-style: double;
+    background-color: whitesmoke;
+}
+.fnt{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+  }

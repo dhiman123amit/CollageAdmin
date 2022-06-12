@@ -7,15 +7,17 @@ import { ForgotPasswordComponent } from '../forgot-password/forgot-password.comp
 import { SighUpComponent } from '../sigh-up/sigh-up.component';
 
 const routes:Routes=[
-  {path:'',redirectTo:'auth/login',pathMatch:'full'},
-  {path:'',component:AuthComponent,children:[
-    // {path:'login',redirectTo:'login',pathMatch:'full'},
-  { path: 'login', component: LoginComponent },
-    {path:'forgotPassword',component:ForgotPasswordComponent},
-    // {path:'resetPassword',component:ResetPasswordComponent},
-    {path:"SighUp",component:SighUpComponent}
-  ]},
-  
+  // {path:'',redirectTo:'auth/login',pathMatch:'full'},
+  {
+    path: '', component: AuthComponent, children: [
+      { path: 'login', redirectTo: 'login', pathMatch: 'full' },
+      { path: '', component: LoginComponent },
+      { path: 'forgotPassword', component: ForgotPasswordComponent },
+      // {path:'resetPassword',component:ResetPasswordComponent},
+      { path: "SighUp", component: SighUpComponent }
+    ]
+  },
+
 ]
 
 @NgModule({
@@ -27,7 +29,8 @@ const routes:Routes=[
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    
   ],
   exports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
