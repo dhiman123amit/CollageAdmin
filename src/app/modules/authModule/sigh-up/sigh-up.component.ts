@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sigh-up.component.scss']
 })
 export class SighUpComponent implements OnInit {
-
+  password: any;
+  // password: boolean;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  showPassword() {
+		this.password = !this.password;
+	}
 
 }
